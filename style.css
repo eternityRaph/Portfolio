@@ -1,0 +1,477 @@
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(26, 9, 25);
+    color: ghostwhite;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: goldenrod;
+    text-decoration: none;
+    font-family: 'Arial';
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: goldenrod;
+}
+
+
+/*Menu fixed*/
+
+.menu {
+    display: flex;
+    background-color: rgb(49, 9, 61);
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 99;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+main {
+    padding-top: 40vh;
+    padding-bottom: 50vh;
+    background: #31093D;
+    background: linear-gradient(180deg, rgba(49, 9, 61, 1) 0%, rgba(41, 13, 43, 1) 44%, rgba(26, 9, 25, 1) 77%);
+    text-align: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-shadow: -1px -1px black
+                  1px 1px black
+                 -1px 1px black
+                  1px -1px black;
+}
+
+main > h1 {
+    font-size: 50px;
+}
+
+main > h2 {
+    font-size: 30px;
+}
+
+main > h3 {
+    font-size: 20px;
+}
+
+
+.accueil {
+    padding: 5vh;
+    padding-top: 10vh;
+}
+
+.accueil > * {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.accueil > h2 {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+
+/*Section présentation*/
+
+
+
+/*Section etablissements*/
+.etablissement {
+    background-color: aliceblue;
+    color: black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 50% 50%;
+}
+
+.etablissement > article:first-child {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: end;
+}
+
+.etablissement > article:last-child {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.etablissement > h2 {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    justify-self: start;
+}
+
+
+
+/*Section compétences*/
+.competence > div {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.competence > div > article {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border: goldenrod solid 5px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.competence img {
+    width: 12%;
+    aspect-ratio: 5/4;
+    object-fit: contain;
+}
+
+
+/*Section projets*/
+.projet {
+    background-color: aliceblue;
+    color: black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+.projet > h2 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    justify-self: left;
+}
+
+.projet > article {
+    border: goldenrod 3px solid;
+    border-radius: 5px;
+    padding: 0;
+}
+
+
+/*Section contact*/
+.contact img {
+    margin-top: 5px;
+}
+
+/*Fin section contact*/
+
+.prj-art {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 650px;
+    height: 200px;
+    font-size: 20px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.prj-art p {
+    margin-right: 5px;
+}
+
+.prj-art a {
+    padding: 5px;
+    border-top: solid goldenrod 3px;
+    border-left: solid goldenrod 3px;
+    background-color: rgb(205, 229, 247);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.prj-art div {
+    flex: 1;
+}
+
+.prj-art div:first-child img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-right: 3px solid goldenrod;
+}
+
+.prj-art div div {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -53px;
+    left: -3px;
+    border-top: goldenrod 3px solid;
+    border-left: goldenrod 3px solid;
+    border-right: goldenrod 3px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.prj-art div:last-child {
+    margin-left: 10px;
+}
+
+.prj-art div div img {
+    height: 40px;
+    padding: 5px;
+}
+
+/*Pages des projets*/
+.prj {
+    background-color: aliceblue;
+    color: black;
+}
+
+.prj h1 {
+    color: white;
+}
+
+.retour {
+    padding: 10px;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(26, 9, 25);
+    color: white;
+    border-bottom: solid 3px goldenrod;
+    padding-top: 10vh;
+    padding-left: 5px;
+}
+
+.contenu {
+    display: flex;
+    padding: 5vh;
+    background-color: aliceblue;
+    color: black;
+}
+
+.contenu > div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.contenu > div:last-child > article {
+    border: 1px solid goldenrod;
+    background-color: rgb(198, 228, 255);
+    margin-left: 20px;
+}
+
+.contenu img {
+    padding: 10px;
+    border: 1px solid goldenrod;
+    background-color: rgb(198, 228, 255);
+}
+
+.contenu p {
+    padding-left: 20px;
+}
+
+.contenu h3{
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    /* navbar */
+
+    .menu {
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .menu h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .menu li {
+        padding: 5px;
+    }
+
+    /* écran d'accueil */
+
+    main {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    main > h1 {
+        font-size: 36px;
+    }
+
+    main > h2 {
+        font-size: 24px;
+    }
+
+    main > h3 {
+        font-size: 16px;
+        
+    }
+
+    /* Ensemble des sections */
+
+    .accueil {
+        padding: 30px 15px;
+    }
+
+    .accueil>* {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Section établissemnt */
+
+    .etablissement {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    .etablissement > h2, .etablissement > article:first-child, .etablissement > article:last-child {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+
+    .etablissement article {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Section compétences */
+
+    .competence article {
+        flex-wrap: wrap;
+        gap: 15px;
+        border-radius: 20px;
+    }
+
+    .competence img {
+        width: 70px;
+        min-width: 70px;
+    }
+
+    /* Section projets */
+
+    .projet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prj-art {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .prj-art div:first-child img {
+        height: 220px;
+        border-right: none;
+        border-bottom: 3px solid goldenrod;
+    }
+
+    .prj-art div:last-child {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .prj-art div div {
+        position: static;
+        border: none;
+        margin-bottom: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .prj-art div div img {
+        height: 35px;
+    }
+
+    .prj-art a {
+        position: static;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    /* Section contact */
+
+    .contact img {
+        height: 20px;
+    }
+
+    /* Pages projets */
+
+    .titre {
+        padding-top: 20px;
+    }
+
+    .contenu {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contenu > div:first-child {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contenu img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
